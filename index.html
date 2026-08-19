@@ -201,19 +201,20 @@
         <div class="spotlight-body">
           <div class="spotlight-main">
             <h3>Driving CivicSense: Edge AI Perception for Road Safety</h3>
-            <p>On-device AI for intersection discipline, lane courtesy, road hazard alerts &amp; cooperative safety. Built on <strong>50,000 miles</strong> of real driving footage + LiDAR, deployed as <strong>YOLOv8/v11 INT8 → TensorRT at ~12 ms</strong> on the <strong>NVIDIA Jetson Orin Nano Super NX</strong>, streamed to a Raspberry Pi Zero 2W UDP server. Zero video leaves the car.</p>
-            <p>Includes a published paper on <strong>Intersection Blockage Prediction</strong>, an ISO 26262 safety study, and an edge VLM serving stack (vLLM + TensorRT-LLM in Docker on the Jetson).</p>
+            <p>CivicSense is an <strong>aftermarket edge-AI co-pilot for your windshield</strong>: it watches the road, understands traffic behavior, and <strong>talks to you, politely but firmly</strong> when civility slips. It detects intersection blockages, lane camping, stop-sign violations, road hazards, animals and debris, and broadcasts hazard beacons to nearby vehicles.</p>
+            <p>Everything runs <strong>100% on-device</strong>: <strong>YOLOv8/v11 INT8 → TensorRT at ~12 ms</strong> on an <strong>NVIDIA Jetson Orin Nano Super NX</strong>, a formal zero-training <strong>kinematic decision engine</strong> (dilemma zone, lead-vehicle, cut-in, stale rules), Kalman + Deep SORT tracking, and a voice-guided alert system. Built on <strong>50,000 miles</strong> of real driving footage + LiDAR, with synthetic data from CARLA/SUMO.</p>
+            <p>Includes a <strong>published paper on Intersection Blockage Prediction</strong>, an <strong>ISO 26262</strong> functional-safety study, Mobileye RSS-style safety reasoning, and an edge VLM serving stack (vLLM + TensorRT-LLM in Docker on the Jetson).</p>
             <div class="spotlight-links">
               <a class="btn btn-primary" href="https://arpanpathak.github.io/driving-civicsense-vision-model/" target="_blank" rel="noopener">📄 Read the Paper ↗</a>
               <a class="btn btn-ghost" href="https://github.com/arpanpathak/driving-civicsense-vision-model" target="_blank" rel="noopener">⭐ Main Repo ↗</a>
             </div>
           </div>
           <div class="spotlight-side">
-            <h4>Companion Repos</h4>
-            <a href="https://github.com/arpanpathak/civicsense-stream-client" target="_blank" rel="noopener">🦀 <b>civicsense-stream-client</b><span>YOLOv8n on MJPEG: pure Rust (Candle), no Python</span></a>
-            <a href="https://github.com/arpanpathak/civicsense-pi-stream" target="_blank" rel="noopener">📹 <b>civicsense-pi-stream</b><span>Raspberry Pi Zero 2W dash-cam: MJPEG + raw UDP, 100% Rust</span></a>
-            <a href="https://github.com/arpanpathak/civicsense-companion" target="_blank" rel="noopener">📱 <b>civicsense-companion</b><span>Kotlin Multiplatform app: real-time alerts via gRPC bridge</span></a>
-            <a href="https://github.com/arpanpathak/driving-civic-sense-data-crowd" target="_blank" rel="noopener">🗂️ <b>driving-civic-sense-data-crowd</b><span>Datasets &amp; field-validation ground truth, MIT-licensed</span></a>
+            <h4>Companion Repos: The Full Pipeline</h4>
+            <a href="https://github.com/arpanpathak/civicsense-pi-stream" target="_blank" rel="noopener">📹 <b>civicsense-pi-stream</b><span>The capture layer. A Rust MJPEG + UDP live dash-cam server that turns a $15 Raspberry Pi Zero 2 W + Arducam into a phone-streamable camera. Hotspot mode, no cloud, no router, ~50 MB RAM.</span></a>
+            <a href="https://github.com/arpanpathak/civicsense-stream-client" target="_blank" rel="noopener">🧠 <b>civicsense-stream-client</b><span>The perception layer. A pure-Rust client (HuggingFace Candle, no Python, no ONNX Runtime) that pulls the Pi's MJPEG stream, runs YOLOv8n on every frame, draws boxes, and saves annotated frames.</span></a>
+            <a href="https://github.com/arpanpathak/civicsense-companion" target="_blank" rel="noopener">📱 <b>civicsense-companion</b><span>The human layer. A Kotlin Multiplatform app (Jetpack Compose + SwiftUI) that subscribes to the pipeline's gRPC alert stream: intersection violations, lane warnings, stop signs and hazards, live on your phone.</span></a>
+            <a href="https://github.com/arpanpathak/driving-civic-sense-data-crowd" target="_blank" rel="noopener">🗂️ <b>driving-civic-sense-data-crowd</b><span>The honesty layer. MIT-licensed training data + field-validation ground truth: 7-class YOLO labels, a formal ground-truth schema, validators, and public-dataset aggregation (COCO, BDD100K, UA-DETRAC, CARLA). No pixels in git.</span></a>
           </div>
         </div>
       </div>
