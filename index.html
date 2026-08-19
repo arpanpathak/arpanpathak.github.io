@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arpan Pathak · Systems Software Engineer</title>
+  <meta name="description" content="Arpan Pathak — Senior Systems Software Engineer. Rust, C++, Go, CUDA, Kubernetes. Amazon → Oracle → Microsoft." />
+  <meta property="og:title" content="Arpan Pathak · Systems Software Engineer" />
+  <meta property="og:description" content="8+ years building fast things that don't break — AI inference, low-latency systems, cloud-native infra." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦀</text></svg>" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== Nav ===== -->
+  <header class="nav" id="nav">
+    <div class="nav-inner container">
+      <a class="nav-logo" href="#top"><span class="nav-logo-prompt">~/</span>arpan<span class="accent">.</span>dev</a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">about</a>
+        <a href="#experience">experience</a>
+        <a href="#projects">projects</a>
+        <a href="#skills">skills</a>
+        <a href="#education">education</a>
+        <a class="nav-cta" href="resume/Arpan_Pathak_Resume.pdf" download>📄 Résumé</a>
+      </nav>
+      <button class="nav-burger" id="navBurger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="top">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-inner container">
+      <div class="terminal" id="terminal" aria-hidden="true">
+        <div class="terminal-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="terminal-title">arpan@pathak — zsh</span></div>
+        <div class="terminal-body">
+          <p class="t-line"><span class="t-prompt">~ $</span> whoami</p>
+          <p class="t-out" id="tWhoami">Arpan Pathak</p>
+          <p class="t-line"><span class="t-prompt">~ $</span> cat mission.txt</p>
+          <p class="t-out" id="tMission"></p>
+          <p class="t-line"><span class="t-prompt">~ $</span> <span class="t-cursor" id="tCursor">▋</span></p>
+        </div>
+      </div>
+      <h1 class="hero-name">Arpan Pathak</h1>
+      <p class="hero-tagline">Systems Software Engineer · <span class="accent">I build fast things that don't break</span></p>
+      <div class="hero-badges">
+        <span class="badge">🐍 Python</span><span class="badge">🦀 Rust</span><span class="badge">⚙️ C++</span><span class="badge">🚀 Go</span><span class="badge">⚡ CUDA</span><span class="badge">☸️ Kubernetes</span>
+      </div>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#projects">View Projects</a>
+        <a class="btn btn-ghost" href="resume/Arpan_Pathak_Resume.pdf" download>Download Résumé</a>
+        <a class="btn btn-ghost" href="mailto:arpan.pathak47@gmail.com">Contact Me</a>
+      </div>
+      <div class="hero-meta">
+        <span>📍 Seattle, WA</span>
+        <span>💼 Open to work · H1B transfer</span>
+      </div>
+    </div>
+    <a class="scroll-hint" href="#about" aria-label="Scroll down"><span></span></a>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title"><span class="section-num">01.</span> <span class="title-text">About Me</span></h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>Senior Software Engineer with <strong>8 years</strong> building <strong>AI inference serving</strong>, <strong>backend microservices</strong>, and cloud-native infrastructure at <strong>Amazon</strong>, <strong>Microsoft</strong>, <strong>Oracle</strong>, and <strong>Razorpay</strong>.</p>
+          <p>Strong in <strong>Python</strong>, modern memory-safe <strong>C++</strong>, <strong>Rust</strong>, and <strong>CUDA</strong> — with BERT inference at <strong>5,000 QPS</strong> (ONNX, INT8) on Docker/Kubernetes with CI/CD.</p>
+          <p>Passionate about <strong>computer vision &amp; deep learning for road safety</strong> on <strong>NVIDIA Jetson Orin</strong> (TensorRT), lock-free data structures, eBPF/Cilium networking, and writing books about how it all works.</p>
+          <blockquote class="about-quote">"Never settle, always regret, then refactor the mess." <span class="quote-sub">— আগে গেলে বাঘে খায়</span></blockquote>
+          <div class="about-links">
+            <a href="https://github.com/arpanpathak" target="_blank" rel="noopener">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/arpan-pathak-272341424/" target="_blank" rel="noopener">LinkedIn ↗</a>
+            <a href="https://www.youtube.com/@ArpanPathak" target="_blank" rel="noopener">YouTube ↗</a>
+            <a href="mailto:arpan.pathak47@gmail.com">Email ↗</a>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card"><span class="stat-num" data-target="8">0</span><span class="stat-label">Years Experience</span></div>
+          <div class="stat-card"><span class="stat-num" data-target="5000">0</span><span class="stat-label">BERT QPS Served</span></div>
+          <div class="stat-card"><span class="stat-num" data-target="65">0</span><span class="stat-label">Public Repos</span></div>
+          <div class="stat-card"><span class="stat-num" data-target="84">0</span><span class="stat-label">GitHub Followers</span></div>
+          <div class="stat-card"><span class="stat-num" data-target="99.99" data-decimals="2">0</span><span class="stat-label">% Uptime @ Razorpay</span></div>
+          <div class="stat-card"><span class="stat-num" data-target="1200000" data-prefix="$" data-suffix="/mo">0</span><span class="stat-label">Oracle Savings</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Experience ===== -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <h2 class="section-title"><span class="section-num">02.</span> <span class="title-text">Experience</span></h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <div class="timeline-head">
+              <h3>Software Developer II <span class="company">@ Microsoft</span></h3>
+              <span class="timeline-date">Jun 2025 – Aug 2026 · Redmond, WA</span>
+            </div>
+            <ul>
+              <li>Built zero-trust sovereign-cloud networking with eBPF + Cilium enforcing data residency &amp; SecNumCloud compliance; wrote Kubebuilder operators reconciling state across AKS clusters in France &amp; Germany.</li>
+              <li>Built &amp; maintained Data Loss Prevention (DLP) and data lifecycle management services with a C#/.NET backend.</li>
+              <li>Refactored a legacy C++ codebase with modern C++ (smart pointers, RAII), fixing use-after-free and buffer-overflow vulnerabilities.</li>
+            </ul>
+            <div class="tech-chips"><span>C++</span><span>C#/.NET</span><span>Python</span><span>Kubernetes</span><span>Cilium</span><span>eBPF</span><span>Docker</span><span>Linux</span></div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <div class="timeline-head">
+              <h3>Senior Software Engineer <span class="company">@ Oracle Cloud Infrastructure</span></h3>
+              <span class="timeline-date">Oct 2024 – Mar 2025 · Seattle, WA</span>
+            </div>
+            <ul>
+              <li>Owned the Terraform provider (developer SDK) for Autonomous Database, replacing legacy control-plane tooling — <strong>$1.2M/month</strong> in savings.</li>
+              <li>Built lock-free data structures that cut contention &amp; latency in high-concurrency read-write paths.</li>
+              <li>Integrated OCI Security Vault with automated key rotation across control-plane services.</li>
+            </ul>
+            <div class="tech-chips"><span>Java</span><span>Go</span><span>REST/gRPC</span><span>Terraform</span><span>OCI</span></div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <div class="timeline-head">
+              <h3>Software Development Engineer II <span class="company">@ Amazon</span></h3>
+              <span class="timeline-date">Mar 2021 – Oct 2024 · Seattle, WA &amp; Hyderabad, IN</span>
+            </div>
+            <ul>
+              <li>Scaled low-latency BERT inference to <strong>5,000 QPS</strong> (ONNX Runtime, INT8), cutting triage SLA from 7 days to 2 hours.</li>
+              <li>Owned end-to-end training/serving for an XGBoost + DL ensemble across FreeVee, Twitch, MiniTV &amp; Prime Video — <strong>+5% ad CTR</strong>, <strong>$5.4M/month</strong> revenue.</li>
+              <li>Led a team of 3 building programmatic-guaranteed ad delivery at <strong>&lt;50 ms</strong> using real-time CDC (Kotlin, REST/gRPC).</li>
+              <li>Designed a uniqueness-constraint indexing SDK with two-phase commit &amp; serializable isolation (<strong>3K writes/s</strong>).</li>
+              <li>Built a <strong>1-petabyte</strong> warehouse with AWS Glue &amp; Spark; cut deal over-delivery ~30% and overspend 25%.</li>
+            </ul>
+            <div class="tech-chips"><span>Python</span><span>Kotlin</span><span>PyTorch</span><span>XGBoost</span><span>ONNX Runtime</span><span>Spark</span><span>Kafka</span><span>DynamoDB</span><span>Redshift</span><span>AWS</span></div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <div class="timeline-head">
+              <h3>SDE <span class="company">@ Razorpay</span></h3>
+              <span class="timeline-date">Aug 2020 – Feb 2021 · Bengaluru, IN</span>
+            </div>
+            <ul>
+              <li>Built the P2P Unified Payments Gateway in Go (Protobuf/gRPC) — <strong>3M+ transactions/hour</strong> at peak, <strong>99.99% uptime</strong>, <strong>150 ms P99</strong> for Zomato, Swiggy, Zerodha, Groww.</li>
+            </ul>
+            <div class="tech-chips"><span>Go</span><span>gRPC</span><span>Protobuf</span><span>AWS</span><span>GCP</span></div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <div class="timeline-head">
+              <h3>Software Engineer <span class="company">@ Mindfire Solutions</span></h3>
+              <span class="timeline-date">Aug 2018 – Feb 2020 · Bhubaneswar, IN</span>
+            </div>
+            <ul>
+              <li>Built Java/Spring full-stack tools and an AR product-search microservice handling <strong>10K+ daily queries</strong>.</li>
+            </ul>
+            <div class="tech-chips"><span>Java</span><span>Spring</span><span>Microservices</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Projects ===== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title"><span class="section-num">03.</span> <span class="title-text">Featured Projects</span></h2>
+      <div class="projects-grid" id="projectsGrid"><!-- injected by JS --></div>
+      <div class="projects-more">
+        <a class="btn btn-ghost" href="https://github.com/arpanpathak?tab=repositories" target="_blank" rel="noopener">+ 50 more on GitHub ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Skills ===== -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <h2 class="section-title"><span class="section-num">04.</span> <span class="title-text">Skills &amp; Toolbox</span></h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h4>Languages</h4>
+          <div class="tech-chips"><span>Python</span><span>C++</span><span>Rust</span><span>Go</span><span>Java</span><span>Kotlin</span><span>C</span><span>Shell/Bash</span><span>TypeScript</span></div>
+        </div>
+        <div class="skill-group">
+          <h4>AI / ML Inference</h4>
+          <div class="tech-chips"><span>PyTorch</span><span>TensorRT (INT8)</span><span>ONNX Runtime</span><span>vLLM</span><span>SGLang</span><span>TensorRT-LLM</span><span>BERT</span><span>XGBoost</span><span>YOLOv8/v11</span><span>Quantization</span><span>MLOps</span><span>Edge Inference</span></div>
+        </div>
+        <div class="skill-group">
+          <h4>GPU &amp; Parallel Computing</h4>
+          <div class="tech-chips"><span>CUDA</span><span>CUDA-Oxide (Rust→CUDA)</span><span>SIMT</span><span>GPU Kernels</span><span>NVIDIA Jetson Orin</span><span>HPC</span></div>
+        </div>
+        <div class="skill-group">
+          <h4>Systems &amp; Performance</h4>
+          <div class="tech-chips"><span>Lock-Free Data Structures</span><span>Concurrency</span><span>Memory Safety</span><span>Low-Latency Systems</span><span>Computer Architecture</span><span>Performance Engineering</span></div>
+        </div>
+        <div class="skill-group">
+          <h4>Networking &amp; Distributed Systems</h4>
+          <div class="tech-chips"><span>TCP/IP</span><span>mTLS</span><span>HTTP/2/3</span><span>QUIC</span><span>eBPF</span><span>XDP</span><span>Cilium</span><span>Kafka</span><span>Spark</span><span>CDC</span><span>gRPC</span><span>Consensus</span><span>Sharding</span></div>
+        </div>
+        <div class="skill-group">
+          <h4>Cloud &amp; Infra</h4>
+          <div class="tech-chips"><span>AWS</span><span>Azure AKS</span><span>GCP GKE</span><span>Kubernetes</span><span>Docker</span><span>Helm</span><span>Terraform</span><span>Kubebuilder</span><span>Istio</span><span>CI/CD</span><span>Prometheus</span><span>Grafana</span></div>
+        </div>
+        <div class="skill-group">
+          <h4>Data &amp; Storage</h4>
+          <div class="tech-chips"><span>DynamoDB</span><span>PostgreSQL</span><span>MySQL</span><span>Redis</span><span>Redshift</span><span>S3</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Education ===== -->
+  <section class="section" id="education">
+    <div class="container">
+      <h2 class="section-title"><span class="section-num">05.</span> <span class="title-text">Education</span></h2>
+      <div class="edu-card">
+        <div class="edu-icon">🎓</div>
+        <div>
+          <h3>B.Tech, Computer Science &amp; Engineering</h3>
+          <p>RCC Institute of Information Technology, Kolkata · 2018</p>
+          <div class="tech-chips"><span>Data Structures &amp; Algorithms</span><span>Operating Systems</span><span>Computer Networks</span><span>DBMS</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section class="section section-contact" id="contact">
+    <div class="container">
+      <h2 class="section-title"><span class="section-num">06.</span> <span class="title-text">Let's Build Something</span></h2>
+      <p class="contact-lead">Currently engineering systems that make AI fast, safe, and affordable — and writing books about how it all works.</p>
+      <div class="contact-actions">
+        <a class="btn btn-primary" href="mailto:arpan.pathak47@gmail.com">✉️ arpan.pathak47@gmail.com</a>
+        <a class="btn btn-ghost" href="https://github.com/arpanpathak" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/arpan-pathak-272341424/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn-ghost" href="https://www.youtube.com/@ArpanPathak" target="_blank" rel="noopener">YouTube</a>
+      </div>
+      <div class="books">
+        <h4>📚 Books I'm Writing</h4>
+        <div class="book-links">
+          <a href="https://arpanpathak.github.io/gpu-parallel-book/" target="_blank" rel="noopener">GPU Parallel Programming ↗</a>
+          <a href="https://arpanpathak.github.io/ebpf-rust-networking-book/" target="_blank" rel="noopener">eBPF + Rust Networking ↗</a>
+          <a href="https://arpanpathak.github.io/driving-civicsense-vision-model/" target="_blank" rel="noopener">CivicSense Vision Paper ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Arpan Pathak · Built with 🦀 &amp; ☕</p>
+      <p class="footer-mono">~ $ echo "thanks for stopping by"</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
