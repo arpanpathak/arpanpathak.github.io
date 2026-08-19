@@ -185,9 +185,40 @@
   <section class="section" id="projects">
     <div class="container">
       <h2 class="section-title"><span class="section-num">03.</span> <span class="title-text">Featured Projects</span></h2>
-      <div class="projects-grid" id="projectsGrid"><!-- injected by JS --></div>
+
+      <!-- CivicSense flagship -->
+      <div class="spotlight reveal">
+        <div class="spotlight-flag">🚦 FLAGSHIP · EDGE AI · 100% ON-DEVICE · PRIVACY-FIRST</div>
+        <div class="spotlight-body">
+          <div class="spotlight-main">
+            <h3>Driving CivicSense — Edge AI Perception for Road Safety</h3>
+            <p>On-device AI for intersection discipline, lane courtesy, road hazard alerts &amp; cooperative safety. Built on <strong>50,000 miles</strong> of real driving footage + LiDAR, deployed as <strong>YOLOv8/v11 INT8 → TensorRT at ~12 ms</strong> on the <strong>NVIDIA Jetson Orin Nano Super NX</strong>, streamed to a Raspberry Pi Zero 2W UDP server. Zero video leaves the car.</p>
+            <p>Includes a published paper on <strong>Intersection Blockage Prediction</strong>, an ISO 26262 safety study, and an edge VLM serving stack (vLLM + TensorRT-LLM in Docker on the Jetson).</p>
+            <div class="spotlight-links">
+              <a class="btn btn-primary" href="https://arpanpathak.github.io/driving-civicsense-vision-model/" target="_blank" rel="noopener">📄 Read the Paper ↗</a>
+              <a class="btn btn-ghost" href="https://github.com/arpanpathak/driving-civicsense-vision-model" target="_blank" rel="noopener">⭐ Main Repo ↗</a>
+            </div>
+          </div>
+          <div class="spotlight-side">
+            <h4>Companion Repos</h4>
+            <a href="https://github.com/arpanpathak/civicsense-stream-client" target="_blank" rel="noopener">🦀 <b>civicsense-stream-client</b><span>YOLOv8n on MJPEG — pure Rust (Candle), no Python</span></a>
+            <a href="https://github.com/arpanpathak/civicsense-pi-stream" target="_blank" rel="noopener">📹 <b>civicsense-pi-stream</b><span>Raspberry Pi Zero 2W dash-cam — MJPEG + raw UDP, 100% Rust</span></a>
+            <a href="https://github.com/arpanpathak/civicsense-companion" target="_blank" rel="noopener">📱 <b>civicsense-companion</b><span>Kotlin Multiplatform app — real-time alerts via gRPC bridge</span></a>
+            <a href="https://github.com/arpanpathak/driving-civic-sense-data-crowd" target="_blank" rel="noopener">🗂️ <b>driving-civic-sense-data-crowd</b><span>Datasets &amp; field-validation ground truth, MIT-licensed</span></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Books -->
+      <h3 class="sub-title">📚 Books I've Written</h3>
+      <div class="projects-grid" id="booksGrid"><!-- injected by JS --></div>
+
+      <!-- More projects -->
+      <h3 class="sub-title">🧪 More Personal Projects</h3>
+      <div class="projects-grid" id="moreGrid"><!-- injected by JS --></div>
+
       <div class="projects-more">
-        <a class="btn btn-ghost" href="https://github.com/arpanpathak?tab=repositories" target="_blank" rel="noopener">+ 50 more on GitHub ↗</a>
+        <a class="btn btn-ghost" href="https://github.com/arpanpathak?tab=repositories" target="_blank" rel="noopener">+ more on GitHub ↗</a>
       </div>
     </div>
   </section>

@@ -3,7 +3,9 @@
    ========================================================= */
 
 /* ---------- Project data (from live GitHub API, Aug 2026) ---------- */
-const projects = [
+
+/* 📚 Books I've written */
+const books = [
   {
     name: 'gpu-parallel-book',
     url: 'https://github.com/arpanpathak/gpu-parallel-book',
@@ -15,77 +17,23 @@ const projects = [
     home: 'https://arpanpathak.github.io/gpu-parallel-book/',
   },
   {
-    name: 'Data-Structures-and-Algorithm',
-    url: 'https://github.com/arpanpathak/Data-Structures-and-Algorithm',
-    desc: 'Comprehensive DSA implementations and solutions — the patterns that show up in every serious interview.',
-    lang: 'C++',
-    stars: 17,
-    forks: 22,
-    icon: '🧠',
-  },
-  {
-    name: 'systems-programming-design-patterns',
-    url: 'https://github.com/arpanpathak/systems-programming-design-patterns',
-    desc: 'Hands-on systems programming: I/O, OS, networking, and concurrency patterns, each with working examples.',
-    lang: 'Go',
-    stars: 12,
-    forks: 0,
-    icon: '🔍',
-  },
-  {
-    name: 'AdvancedAlgorithmPatterns',
-    url: 'https://github.com/arpanpathak/AdvancedAlgorithmPatterns',
-    desc: 'Data structure & algorithmic problems solved in Kotlin — clean, idiomatic, pattern-first.',
-    lang: 'Kotlin',
-    stars: 7,
-    forks: 0,
-    icon: '⚡',
-  },
-  {
-    name: 'DistributedSystemDesign',
-    url: 'https://github.com/arpanpathak/DistributedSystemDesign',
-    desc: 'Distributed system design case studies — consensus, replication, sharding, and real-world architectures.',
-    lang: 'HTML',
-    stars: 6,
-    forks: 0,
-    icon: '🌐',
-  },
-  {
-    name: 'CodingInterviewFightClub_Hustle_600',
-    url: 'https://github.com/arpanpathak/CodingInterviewFightClub_Hustle_600',
-    desc: 'The ultimate coding interview prep book — Binary Search to System Design, in Kotlin/Java/Python/Rust/C++.',
-    lang: 'Python',
-    stars: 5,
-    forks: 0,
-    icon: '🥊',
-  },
-  {
-    name: 'jobsense-parker',
-    url: 'https://github.com/arpanpathak/jobsense-parker',
-    desc: 'Cut the fluff. A Rust CLI that crawls 80+ job sources, scores them against your resume, and serves matches in your terminal.',
+    name: 'seeing-machines-book',
+    url: 'https://github.com/arpanpathak/seeing-machines-book',
+    desc: 'Seeing Machines: Deep Learning & Computer Vision from Python to Bare Metal — 16 chapters ending in the CivicSense capstone.',
     lang: 'Rust',
-    stars: 4,
-    forks: 2,
-    icon: '🦀',
-  },
-  {
-    name: 'driving-civicsense-vision-model',
-    url: 'https://github.com/arpanpathak/driving-civicsense-vision-model',
-    desc: 'Edge AI perception for intersection discipline & lane awareness. 100% on-device inference, zero video leaves the car.',
-    lang: 'Rust',
-    stars: 4,
+    stars: 0,
     forks: 0,
-    icon: '🚦',
-    home: 'https://arpanpathak.github.io/driving-civicsense-vision-model/',
+    icon: '👁️',
   },
   {
-    name: 'scalable-websockets',
-    url: 'https://github.com/arpanpathak/scalable-websockets',
-    desc: 'Scalable WebSockets in Go using Redis and round-robin load balancing.',
-    lang: 'Go',
-    stars: 3,
-    forks: 3,
-    icon: '🔌',
+    name: 'ebpf-rust-networking-book',
+    url: 'https://github.com/arpanpathak/ebpf-rust-networking-book',
+    desc: 'eBPF from the ground up — the kernel packet path, verifier, XDP, tc, sockmap, Cilium & Kubernetes, with working Aya programs.',
+    lang: 'Rust',
+    stars: 1,
+    forks: 0,
+    icon: '🕸️',
+    home: 'https://arpanpathak.github.io/ebpf-rust-networking-book/',
   },
   {
     name: 'bevy-physics-book',
@@ -95,6 +43,55 @@ const projects = [
     stars: 2,
     forks: 0,
     icon: '🎮',
+  },
+  {
+    name: 'modern-cpp-systems-book',
+    url: 'https://github.com/arpanpathak/modern-cpp-systems-book',
+    desc: 'Modern C++ memory-safe systems programming — from first principles to NVIDIA & HFT interview, 16 chapters.',
+    lang: 'C++',
+    stars: 1,
+    forks: 1,
+    icon: '📘',
+  },
+];
+
+/* 🧪 More personal projects */
+const moreProjects = [
+  {
+    name: 'civicsense-stream-client',
+    url: 'https://github.com/arpanpathak/civicsense-stream-client',
+    desc: 'Rust client running YOLOv8n object detection on an MJPEG stream with Candle (pure-Rust ML). No Python, no ONNX Runtime.',
+    lang: 'Rust',
+    stars: 1,
+    forks: 0,
+    icon: '🦀',
+  },
+  {
+    name: 'civicsense-pi-stream',
+    url: 'https://github.com/arpanpathak/civicsense-pi-stream',
+    desc: 'Raspberry Pi Zero 2W dash-cam — live MJPEG over HTTP + raw UDP datagrams, WiFi hotspot mode, 100% Rust, zero Python.',
+    lang: 'Rust',
+    stars: 0,
+    forks: 0,
+    icon: '📹',
+  },
+  {
+    name: 'civicsense-companion',
+    url: 'https://github.com/arpanpathak/civicsense-companion',
+    desc: 'Kotlin Multiplatform companion app for the CivicSense edge-AI pipeline — real-time alerts via gRPC bridge.',
+    lang: 'Kotlin',
+    stars: 1,
+    forks: 0,
+    icon: '📱',
+  },
+  {
+    name: 'driving-civic-sense-data-crowd',
+    url: 'https://github.com/arpanpathak/driving-civic-sense-data-crowd',
+    desc: 'CivicSense datasets & field-validation ground truth — YOLO training labels (7 classes) + kinematic decision-engine validation, MIT-licensed.',
+    lang: 'Rust',
+    stars: 0,
+    forks: 0,
+    icon: '🗂️',
   },
   {
     name: 'cuda-oxide',
@@ -115,23 +112,22 @@ const projects = [
     icon: '🎧',
   },
   {
-    name: 'ebpf-rust-networking-book',
-    url: 'https://github.com/arpanpathak/ebpf-rust-networking-book',
-    desc: 'eBPF from the ground up — the kernel packet path, verifier, XDP, tc, sockmap, Cilium & Kubernetes, with working Aya programs.',
-    lang: 'Rust',
-    stars: 1,
+    name: 'andross',
+    url: 'https://github.com/arpanpathak/andross',
+    desc: 'A gorgeous C++20/23 SDK for low-latency Vision, Physics & AR/VR — deterministic execution, smart allocators, no config cruft.',
+    lang: 'C++',
+    stars: 0,
     forks: 0,
-    icon: '🕸️',
-    home: 'https://arpanpathak.github.io/ebpf-rust-networking-book/',
+    icon: '🎛️',
   },
   {
-    name: 'modern-cpp-systems-book',
-    url: 'https://github.com/arpanpathak/modern-cpp-systems-book',
-    desc: 'Modern C++ memory-safe systems programming — from first principles to NVIDIA & HFT interview, 16 chapters.',
-    lang: 'C++',
-    stars: 1,
-    forks: 1,
-    icon: '📘',
+    name: 'kube-goAt',
+    url: 'https://github.com/arpanpathak/kube-goAt',
+    desc: 'A RISC-inspired, AST-based Infrastructure-as-Code library for Kubernetes in Go — pragmatic, maintainable cloud-native IaC.',
+    lang: 'Go',
+    stars: 0,
+    forks: 0,
+    icon: '☸️',
   },
   {
     name: 'zero-trust-networking-examples',
@@ -143,13 +139,13 @@ const projects = [
     icon: '🔐',
   },
   {
-    name: 'kubernetes-operator-pattern',
-    url: 'https://github.com/arpanpathak/kubernetes-operator-pattern',
-    desc: 'Living book for Kubernetes Operator development — CRDs and reconciliation loops in Go with Kubebuilder.',
+    name: 'systems-programming-design-patterns',
+    url: 'https://github.com/arpanpathak/systems-programming-design-patterns',
+    desc: 'Hands-on systems programming: I/O, OS, networking, and concurrency patterns, each with working examples.',
     lang: 'Go',
-    stars: 0,
+    stars: 12,
     forks: 0,
-    icon: '☸️',
+    icon: '🔍',
   },
 ];
 
@@ -185,9 +181,14 @@ function typeText(el, text, speed = 18, callback) {
 
 /* ---------- Render projects ---------- */
 function renderProjects() {
-  const grid = document.getElementById('projectsGrid');
-  const featured = projects.slice(0, 12);
-  grid.innerHTML = featured
+  renderGrid('booksGrid', books);
+  renderGrid('moreGrid', moreProjects);
+}
+
+function renderGrid(id, items) {
+  const grid = document.getElementById(id);
+  if (!grid) return;
+  grid.innerHTML = items
     .map((p) => {
       const color = LANG_COLORS[p.lang] || '#93a1b8';
       const starStr = p.stars > 0 ? p.stars : '';
@@ -291,7 +292,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
 document.addEventListener('DOMContentLoaded', () => {
   renderProjects();
   // reveal project cards after render
-  document.querySelectorAll('#projectsGrid .reveal').forEach((el) => io.observe(el));
+  document.querySelectorAll('#booksGrid .reveal, #moreGrid .reveal').forEach((el) => io.observe(el));
 
   // terminal animation
   typeText(document.getElementById('tWhoami'), 'Arpan Pathak', 40);
