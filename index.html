@@ -22,6 +22,7 @@
       <a class="nav-logo" href="#top"><span class="nav-logo-prompt">~/</span>arpan<span class="accent">.</span>dev</a>
       <nav class="nav-links" id="navLinks">
         <a href="#about">about</a>
+        <a href="#civicsense">civicsense</a>
         <a href="#books">books</a>
         <a href="#experience">experience</a>
         <a href="#projects">projects</a>
@@ -94,18 +95,47 @@
     </div>
   </section>
 
-  <!-- ===== Books ===== -->
-  <section class="section section-alt" id="books">
+  <!-- ===== CivicSense ===== -->
+  <section class="section section-alt" id="civicsense">
     <div class="container">
-      <h2 class="section-title"><span class="section-num">02.</span> <span class="title-text">Books I've Written</span></h2>
+      <h2 class="section-title"><span class="section-num">02.</span> <span class="title-text">Ambitious Road Safety Project: CivicSense</span></h2>
+      <div class="spotlight reveal">
+        <div class="spotlight-flag">🚦 FLAGSHIP · EDGE AI · 100% ON-DEVICE · PRIVACY-FIRST</div>
+        <div class="spotlight-body">
+          <div class="spotlight-main">
+            <h3>Driving CivicSense: Edge AI Perception for Road Safety</h3>
+            <p>CivicSense is an <strong>aftermarket edge-AI co-pilot for your windshield</strong>: it watches the road, understands traffic behavior, and <strong>talks to you, politely but firmly</strong> when civility slips. It detects intersection blockages, lane camping, stop-sign violations, road hazards, animals and debris, and broadcasts hazard beacons to nearby vehicles.</p>
+            <p>Everything runs <strong>100% on-device</strong>: <strong>YOLOv8/v11 INT8 → TensorRT at ~12 ms</strong> on an <strong>NVIDIA Jetson Orin Nano Super NX</strong>, a formal zero-training <strong>kinematic decision engine</strong> (dilemma zone, lead-vehicle, cut-in, stale rules), Kalman + Deep SORT tracking, and a voice-guided alert system. Built on <strong>50,000 miles</strong> of real driving footage + LiDAR, with synthetic data from CARLA/SUMO.</p>
+            <p>Includes a <strong>published paper on Intersection Blockage Prediction</strong>, an <strong>ISO 26262</strong> functional-safety study, Mobileye RSS-style safety reasoning, and an edge VLM serving stack (vLLM + TensorRT-LLM in Docker on the Jetson).</p>
+            <div class="spotlight-links">
+              <a class="btn btn-primary" href="https://arpanpathak.github.io/driving-civicsense-vision-model/" target="_blank" rel="noopener">📄 Read the Paper ↗</a>
+              <a class="btn btn-ghost" href="https://github.com/arpanpathak/driving-civicsense-vision-model" target="_blank" rel="noopener">⭐ Main Repo ↗</a>
+            </div>
+          </div>
+          <div class="spotlight-side">
+            <h4>Git Submodules: The Full Pipeline</h4>
+            <a href="https://github.com/arpanpathak/civicsense-pi-stream" target="_blank" rel="noopener">📹 <b>pi_stream → civicsense-pi-stream</b><span>The capture layer. A Rust MJPEG + UDP live dash-cam server that turns a $15 Raspberry Pi Zero 2 W + Arducam into a phone-streamable camera. Hotspot mode, no cloud, no router, ~50 MB RAM.</span></a>
+            <a href="https://github.com/arpanpathak/civicsense-stream-client" target="_blank" rel="noopener">🧠 <b>pistream_client → civicsense-stream-client</b><span>The perception layer. A pure-Rust client (HuggingFace Candle, no Python, no ONNX Runtime) that pulls the Pi's MJPEG stream, runs YOLOv8n on every frame, draws boxes, and saves annotated frames.</span></a>
+            <a href="https://github.com/arpanpathak/civicsense-companion" target="_blank" rel="noopener">📱 <b>frontend → civicsense-companion</b><span>The human layer. A Kotlin Multiplatform app (Jetpack Compose + SwiftUI) that subscribes to the pipeline's gRPC alert stream: intersection violations, lane warnings, stop signs and hazards, live on your phone.</span></a>
+            <a href="https://github.com/arpanpathak/driving-civic-sense-data-crowd" target="_blank" rel="noopener">🗂️ <b>datasets → driving-civic-sense-data-crowd</b><span>The honesty layer. MIT-licensed training data + field-validation ground truth: 7-class YOLO labels, a formal ground-truth schema, validators, and public-dataset aggregation (COCO, BDD100K, UA-DETRAC, CARLA). No pixels in git.</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Books ===== -->
+  <section class="section" id="books">
+    <div class="container">
+      <h2 class="section-title"><span class="section-num">03.</span> <span class="title-text">Books I've Written</span></h2>
       <div class="projects-grid" id="booksGrid"><!-- injected by JS --></div>
     </div>
   </section>
 
   <!-- ===== Experience ===== -->
-  <section class="section" id="experience">
+  <section class="section section-alt" id="experience">
     <div class="container">
-      <h2 class="section-title"><span class="section-num">03.</span> <span class="title-text">Experience</span></h2>
+      <h2 class="section-title"><span class="section-num">04.</span> <span class="title-text">Experience</span></h2>
       <div class="timeline">
 
         <div class="timeline-item">
@@ -193,31 +223,7 @@
   <!-- ===== Projects ===== -->
   <section class="section" id="projects">
     <div class="container">
-      <h2 class="section-title"><span class="section-num">04.</span> <span class="title-text">Featured Projects</span></h2>
-
-      <!-- CivicSense flagship -->
-      <div class="spotlight reveal">
-        <div class="spotlight-flag">🚦 FLAGSHIP · EDGE AI · 100% ON-DEVICE · PRIVACY-FIRST</div>
-        <div class="spotlight-body">
-          <div class="spotlight-main">
-            <h3>Driving CivicSense: Edge AI Perception for Road Safety</h3>
-            <p>CivicSense is an <strong>aftermarket edge-AI co-pilot for your windshield</strong>: it watches the road, understands traffic behavior, and <strong>talks to you, politely but firmly</strong> when civility slips. It detects intersection blockages, lane camping, stop-sign violations, road hazards, animals and debris, and broadcasts hazard beacons to nearby vehicles.</p>
-            <p>Everything runs <strong>100% on-device</strong>: <strong>YOLOv8/v11 INT8 → TensorRT at ~12 ms</strong> on an <strong>NVIDIA Jetson Orin Nano Super NX</strong>, a formal zero-training <strong>kinematic decision engine</strong> (dilemma zone, lead-vehicle, cut-in, stale rules), Kalman + Deep SORT tracking, and a voice-guided alert system. Built on <strong>50,000 miles</strong> of real driving footage + LiDAR, with synthetic data from CARLA/SUMO.</p>
-            <p>Includes a <strong>published paper on Intersection Blockage Prediction</strong>, an <strong>ISO 26262</strong> functional-safety study, Mobileye RSS-style safety reasoning, and an edge VLM serving stack (vLLM + TensorRT-LLM in Docker on the Jetson).</p>
-            <div class="spotlight-links">
-              <a class="btn btn-primary" href="https://arpanpathak.github.io/driving-civicsense-vision-model/" target="_blank" rel="noopener">📄 Read the Paper ↗</a>
-              <a class="btn btn-ghost" href="https://github.com/arpanpathak/driving-civicsense-vision-model" target="_blank" rel="noopener">⭐ Main Repo ↗</a>
-            </div>
-          </div>
-          <div class="spotlight-side">
-            <h4>Companion Repos: The Full Pipeline</h4>
-            <a href="https://github.com/arpanpathak/civicsense-pi-stream" target="_blank" rel="noopener">📹 <b>civicsense-pi-stream</b><span>The capture layer. A Rust MJPEG + UDP live dash-cam server that turns a $15 Raspberry Pi Zero 2 W + Arducam into a phone-streamable camera. Hotspot mode, no cloud, no router, ~50 MB RAM.</span></a>
-            <a href="https://github.com/arpanpathak/civicsense-stream-client" target="_blank" rel="noopener">🧠 <b>civicsense-stream-client</b><span>The perception layer. A pure-Rust client (HuggingFace Candle, no Python, no ONNX Runtime) that pulls the Pi's MJPEG stream, runs YOLOv8n on every frame, draws boxes, and saves annotated frames.</span></a>
-            <a href="https://github.com/arpanpathak/civicsense-companion" target="_blank" rel="noopener">📱 <b>civicsense-companion</b><span>The human layer. A Kotlin Multiplatform app (Jetpack Compose + SwiftUI) that subscribes to the pipeline's gRPC alert stream: intersection violations, lane warnings, stop signs and hazards, live on your phone.</span></a>
-            <a href="https://github.com/arpanpathak/driving-civic-sense-data-crowd" target="_blank" rel="noopener">🗂️ <b>driving-civic-sense-data-crowd</b><span>The honesty layer. MIT-licensed training data + field-validation ground truth: 7-class YOLO labels, a formal ground-truth schema, validators, and public-dataset aggregation (COCO, BDD100K, UA-DETRAC, CARLA). No pixels in git.</span></a>
-          </div>
-        </div>
-      </div>
+      <h2 class="section-title"><span class="section-num">05.</span> <span class="title-text">Featured Projects</span></h2>
 
       <!-- More projects -->
       <h3 class="sub-title">🧪 More Personal Projects</h3>
@@ -232,7 +238,7 @@
   <!-- ===== Skills ===== -->
   <section class="section section-alt" id="skills">
     <div class="container">
-      <h2 class="section-title"><span class="section-num">05.</span> <span class="title-text">Skills &amp; Toolbox</span></h2>
+      <h2 class="section-title"><span class="section-num">06.</span> <span class="title-text">Skills &amp; Toolbox</span></h2>
       <div class="skills-grid">
         <div class="skill-group">
           <h4>Languages</h4>
@@ -273,7 +279,7 @@
   <!-- ===== Education ===== -->
   <section class="section" id="education">
     <div class="container">
-      <h2 class="section-title"><span class="section-num">06.</span> <span class="title-text">Education</span></h2>
+      <h2 class="section-title"><span class="section-num">07.</span> <span class="title-text">Education</span></h2>
       <div class="edu-card">
         <div class="edu-icon">🎓</div>
         <div>
@@ -288,7 +294,7 @@
   <!-- ===== Contact ===== -->
   <section class="section section-contact" id="contact">
     <div class="container">
-      <h2 class="section-title"><span class="section-num">07.</span> <span class="title-text">Let's Build Something</span></h2>
+      <h2 class="section-title"><span class="section-num">08.</span> <span class="title-text">Let's Build Something</span></h2>
       <p class="contact-lead">Currently engineering systems that make AI fast, safe, and affordable, while writing books about how it all works.</p>
       <div class="contact-actions">
         <a class="btn btn-primary" href="mailto:arpan.pathak47@gmail.com">✉️ arpan.pathak47@gmail.com</a>

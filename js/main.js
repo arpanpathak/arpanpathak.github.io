@@ -58,42 +58,6 @@ const books = [
 /* 🧪 More personal projects */
 const moreProjects = [
   {
-    name: 'civicsense-stream-client',
-    url: 'https://github.com/arpanpathak/civicsense-stream-client',
-    desc: 'The perception layer of the CivicSense pipeline. A single pure-Rust binary (HuggingFace Candle, no Python, no ONNX Runtime) that connects to the Pi MJPEG stream, runs YOLOv8n detection on every frame, applies non-maximum suppression, draws COCO-class bounding boxes, and saves annotated frames.',
-    lang: 'Rust',
-    stars: 1,
-    forks: 0,
-    icon: '🧠',
-  },
-  {
-    name: 'civicsense-pi-stream',
-    url: 'https://github.com/arpanpathak/civicsense-pi-stream',
-    desc: 'The capture layer of the CivicSense stack. A Rust MJPEG + UDP live dash-cam server that turns a $15 Raspberry Pi Zero 2 W with an Arducam IMX335 into a phone-streamable camera: hotspot mode, no cloud, no router, no SDK lock-in, idling around 50 MB RAM.',
-    lang: 'Rust',
-    stars: 0,
-    forks: 0,
-    icon: '📹',
-  },
-  {
-    name: 'civicsense-companion',
-    url: 'https://github.com/arpanpathak/civicsense-companion',
-    desc: 'The human layer: a Kotlin Multiplatform app (Jetpack Compose on Android, SwiftUI on iOS) that subscribes to the pipeline gRPC alert stream and surfaces intersection violations, lane-camping warnings, stop-sign and hazard alerts in real time, with shared ViewModels and StateFlow.',
-    lang: 'Kotlin',
-    stars: 1,
-    forks: 0,
-    icon: '📱',
-  },
-  {
-    name: 'driving-civic-sense-data-crowd',
-    url: 'https://github.com/arpanpathak/driving-civic-sense-data-crowd',
-    desc: 'The honesty layer: "a model is only as honest as the data it is graded on". MIT-licensed training pack + field-validation ground truth for CivicSense: 7-class YOLO labels, a formal ground-truth schema with validators, confusion-matrix tooling, and public-dataset aggregation (COCO, BDD100K, UA-DETRAC, CARLA/SUMO). No pixels in git.',
-    lang: 'Rust',
-    stars: 0,
-    forks: 0,
-    icon: '🗂️',
-  },
-  {
     name: 'cuda-oxide',
     url: 'https://github.com/arpanpathak/cuda-oxide',
     desc: 'Experimental Rust-to-CUDA compiler: write SIMT GPU kernels in safe(ish) idiomatic Rust, compiled straight to PTX.',
