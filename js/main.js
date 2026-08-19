@@ -1,5 +1,5 @@
 /* =========================================================
-   Arpan Pathak — Portfolio
+   Arpan Pathak: Portfolio
    ========================================================= */
 
 /* ---------- Project data (from live GitHub API, Aug 2026) ---------- */
@@ -9,7 +9,7 @@ const books = [
   {
     name: 'gpu-parallel-book',
     url: 'https://github.com/arpanpathak/gpu-parallel-book',
-    desc: 'GPU parallel programming from the ground up — CUDA C++ and Rust kernels paired with clickable SVG 2D/3D architecture diagrams (warps, SMs, memory tiers).',
+    desc: 'GPU parallel programming from the ground up: CUDA C++ and Rust kernels paired with clickable SVG 2D/3D architecture diagrams (warps, SMs, memory tiers).',
     lang: 'Cuda',
     stars: 40,
     forks: 6,
@@ -19,7 +19,7 @@ const books = [
   {
     name: 'seeing-machines-book',
     url: 'https://github.com/arpanpathak/seeing-machines-book',
-    desc: 'Seeing Machines: Deep Learning & Computer Vision from Python to Bare Metal — 16 chapters ending in the CivicSense capstone.',
+    desc: 'Seeing Machines: Deep Learning & Computer Vision from Python to Bare Metal: 16 chapters ending in the CivicSense capstone.',
     lang: 'Rust',
     stars: 0,
     forks: 0,
@@ -28,7 +28,7 @@ const books = [
   {
     name: 'ebpf-rust-networking-book',
     url: 'https://github.com/arpanpathak/ebpf-rust-networking-book',
-    desc: 'eBPF from the ground up — the kernel packet path, verifier, XDP, tc, sockmap, Cilium & Kubernetes, with working Aya programs.',
+    desc: 'eBPF from the ground up: the kernel packet path, verifier, XDP, tc, sockmap, Cilium & Kubernetes, with working Aya programs.',
     lang: 'Rust',
     stars: 1,
     forks: 0,
@@ -38,7 +38,7 @@ const books = [
   {
     name: 'bevy-physics-book',
     url: 'https://github.com/arpanpathak/bevy-physics-book',
-    desc: 'Comprehensive guide to building physics engines with Bevy & Rust — vectors, kinematics, collisions, ECS, physics sandbox.',
+    desc: 'Comprehensive guide to building physics engines with Bevy & Rust: vectors, kinematics, collisions, ECS, physics sandbox.',
     lang: 'Rust',
     stars: 2,
     forks: 0,
@@ -47,7 +47,7 @@ const books = [
   {
     name: 'modern-cpp-systems-book',
     url: 'https://github.com/arpanpathak/modern-cpp-systems-book',
-    desc: 'Modern C++ memory-safe systems programming — from first principles to NVIDIA & HFT interview, 16 chapters.',
+    desc: 'Modern C++ memory-safe systems programming: from first principles to NVIDIA & HFT interview, 16 chapters.',
     lang: 'C++',
     stars: 1,
     forks: 1,
@@ -69,7 +69,7 @@ const moreProjects = [
   {
     name: 'civicsense-pi-stream',
     url: 'https://github.com/arpanpathak/civicsense-pi-stream',
-    desc: 'Raspberry Pi Zero 2W dash-cam — live MJPEG over HTTP + raw UDP datagrams, WiFi hotspot mode, 100% Rust, zero Python.',
+    desc: 'Raspberry Pi Zero 2W dash-cam: live MJPEG over HTTP + raw UDP datagrams, WiFi hotspot mode, 100% Rust, zero Python.',
     lang: 'Rust',
     stars: 0,
     forks: 0,
@@ -78,7 +78,7 @@ const moreProjects = [
   {
     name: 'civicsense-companion',
     url: 'https://github.com/arpanpathak/civicsense-companion',
-    desc: 'Kotlin Multiplatform companion app for the CivicSense edge-AI pipeline — real-time alerts via gRPC bridge.',
+    desc: 'Kotlin Multiplatform companion app for the CivicSense edge-AI pipeline: real-time alerts via gRPC bridge.',
     lang: 'Kotlin',
     stars: 1,
     forks: 0,
@@ -87,7 +87,7 @@ const moreProjects = [
   {
     name: 'driving-civic-sense-data-crowd',
     url: 'https://github.com/arpanpathak/driving-civic-sense-data-crowd',
-    desc: 'CivicSense datasets & field-validation ground truth — YOLO training labels (7 classes) + kinematic decision-engine validation, MIT-licensed.',
+    desc: 'CivicSense datasets & field-validation ground truth: YOLO training labels (7 classes) + kinematic decision-engine validation, MIT-licensed.',
     lang: 'Rust',
     stars: 0,
     forks: 0,
@@ -96,7 +96,7 @@ const moreProjects = [
   {
     name: 'cuda-oxide',
     url: 'https://github.com/arpanpathak/cuda-oxide',
-    desc: 'Experimental Rust-to-CUDA compiler — write SIMT GPU kernels in safe(ish) idiomatic Rust, compiled straight to PTX.',
+    desc: 'Experimental Rust-to-CUDA compiler: write SIMT GPU kernels in safe(ish) idiomatic Rust, compiled straight to PTX.',
     lang: 'Rust',
     stars: 0,
     forks: 0,
@@ -105,7 +105,7 @@ const moreProjects = [
   {
     name: 'audio-source-seperation',
     url: 'https://github.com/arpanpathak/audio-source-seperation',
-    desc: 'Split a song into vocals and instrumental stems in pure Rust — ONNX Runtime (Demucs) backend, library + CLI.',
+    desc: 'Split a song into vocals and instrumental stems in pure Rust: ONNX Runtime (Demucs) backend, library + CLI.',
     lang: 'Rust',
     stars: 0,
     forks: 0,
@@ -114,7 +114,7 @@ const moreProjects = [
   {
     name: 'andross',
     url: 'https://github.com/arpanpathak/andross',
-    desc: 'A gorgeous C++20/23 SDK for low-latency Vision, Physics & AR/VR — deterministic execution, smart allocators, no config cruft.',
+    desc: 'A gorgeous C++20/23 SDK for low-latency Vision, Physics & AR/VR: deterministic execution, smart allocators, no config cruft.',
     lang: 'C++',
     stars: 0,
     forks: 0,
@@ -123,7 +123,7 @@ const moreProjects = [
   {
     name: 'kube-goAt',
     url: 'https://github.com/arpanpathak/kube-goAt',
-    desc: 'A RISC-inspired, AST-based Infrastructure-as-Code library for Kubernetes in Go — pragmatic, maintainable cloud-native IaC.',
+    desc: 'A RISC-inspired, AST-based Infrastructure-as-Code library for Kubernetes in Go: pragmatic, maintainable cloud-native IaC.',
     lang: 'Go',
     stars: 0,
     forks: 0,

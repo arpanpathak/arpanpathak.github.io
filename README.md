@@ -1,17 +1,17 @@
 # Arpan Pathak · Portfolio
 
-Personal portfolio & GitHub Pages site — [arpanpathak.github.io](https://arpanpathak.github.io)
+Personal portfolio & GitHub Pages site: [arpanpathak.github.io](https://arpanpathak.github.io)
 
-Built with plain HTML / CSS / JS. No frameworks, no build step — just fast, static, and easy to maintain.
+Built with plain HTML / CSS / JS. No frameworks, no build step: just fast, static, and easy to maintain.
 
 ## Sections
 
-- **About** — 8+ years as a systems software engineer (Amazon → Oracle → Microsoft)
-- **Experience** — timeline with quantified impact
-- **Projects** — top GitHub repos, sorted by stars (data from live GitHub API)
-- **Skills** — languages, ML inference, GPU/CUDA, systems, networking, cloud, data
-- **Education** — B.Tech CSE, RCC Institute of Information Technology
-- **Contact** — email + socials + books
+- **About**: 8+ years as a systems software engineer (Amazon → Oracle → Microsoft)
+- **Experience**: timeline with quantified impact
+- **Projects**: top GitHub repos, sorted by stars (data from live GitHub API)
+- **Skills**: languages, ML inference, GPU/CUDA, systems, networking, cloud, data
+- **Education**: B.Tech CSE, RCC Institute of Information Technology
+- **Contact**: email + socials + books
 
 ## Local preview
 
