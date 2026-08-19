@@ -280,12 +280,8 @@ a:hover {
 .t-out { color: var(--text); margin: 2px 0 10px 0; }
 .t-cursor {
   display: inline-block;
-  animation: blink 1s step-end infinite;
   color: var(--green);
-}
-
-@keyframes blink {
-  50% { opacity: 0; }
+  transition: opacity 0.2s;
 }
 
 .hero-name {
