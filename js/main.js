@@ -58,6 +58,16 @@ const books = [
 /* 🧪 More personal projects */
 const moreProjects = [
   {
+    name: 'openbatrangs',
+    url: 'https://github.com/arpanpathak/openbatrangs',
+    desc: 'Agentic coding CLI for local models via Ollama. Auto-discovers the best model on Jetson/edge hardware and iterates with tools.',
+    lang: 'Rust',
+    stars: 0,
+    forks: 0,
+    icon: '🦇',
+    new: true,
+  },
+  {
     name: 'cuda-oxide',
     url: 'https://github.com/arpanpathak/cuda-oxide',
     desc: 'Experimental Rust-to-CUDA compiler: write SIMT GPU kernels in safe(ish) idiomatic Rust, compiled straight to PTX.',
@@ -127,7 +137,7 @@ const LANG_COLORS = {
 };
 
 /* ---------- Terminal typing ---------- */
-const mission = "Systems engineer · 8+ yrs · Amazon → Oracle → Microsoft. I make databases faster (lock-free), networks safer (eBPF/Cilium), and ML inference cheaper (5k QPS serving).";
+const mission = "Systems engineer · 8+ yrs · Amazon → Oracle → Microsoft. I make databases faster (lock-free), networks safer (eBPF/Cilium), ML inference cheaper (5k QPS serving), and local-first agentic coding real with openBatarangs.";
 
 function typeText(el, text, speed = 18, callback) {
   let i = 0;
@@ -162,7 +172,7 @@ function renderGrid(id, items) {
           <span class="project-icon">${p.icon}</span>
           <span class="project-lang" style="color:${color};border-color:${color}55;">${p.lang}</span>
         </div>
-        <h3><a href="${p.url}" target="_blank" rel="noopener">${p.name} ↗</a></h3>
+        <h3><a href="${p.url}" target="_blank" rel="noopener">${p.name} ↗</a>${p.new ? ' <span class="project-new">NEW</span>' : ''}</h3>
         <p class="project-desc">${p.desc}</p>
         <div class="project-meta">
           ${starStr ? `<span>⭐ ${starStr}</span>` : ''}

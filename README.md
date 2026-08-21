@@ -7,6 +7,8 @@ Built with plain HTML / CSS / JS. No frameworks, no build step: just fast, stati
 ## Sections
 
 - **About**: 8+ years as a systems software engineer (Amazon → Oracle → Microsoft)
+- **CivicSense**: flagship edge-AI road-safety project
+- **openBatarangs**: local-first agentic coding CLI + demo video
 - **Experience**: timeline with quantified impact
 - **Projects**: top GitHub repos, sorted by stars (data from live GitHub API)
 - **Skills**: languages, ML inference, GPU/CUDA, systems, networking, cloud, data

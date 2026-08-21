@@ -757,6 +757,74 @@ a:hover {
   color: var(--text-dim);
 }
 
+/* openBatarangs spotlight */
+.spotlight-openbatrangs {
+  border-color: rgba(180, 140, 255, 0.45);
+}
+
+.spotlight-openbatrangs::before {
+  background: linear-gradient(90deg, var(--purple), var(--accent-2), var(--green));
+}
+
+.ob-logo {
+  max-width: 260px;
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  border: 1px solid rgba(180, 140, 255, 0.35);
+  box-shadow: var(--shadow);
+  margin-bottom: 18px;
+}
+
+.ob-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0 4px;
+}
+
+.ob-badges span {
+  font-family: var(--mono);
+  font-size: 0.76rem;
+  color: var(--purple);
+  background: rgba(180, 140, 255, 0.08);
+  border: 1px solid rgba(180, 140, 255, 0.28);
+  padding: 5px 12px;
+  border-radius: 999px;
+}
+
+.spotlight-video h4 {
+  color: var(--accent);
+}
+
+.spotlight-video video {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: #000;
+  margin-bottom: 10px;
+}
+
+.spotlight-video p {
+  font-size: 0.82rem;
+  color: var(--text-dim);
+}
+
+.project-new {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #0b0e14;
+  background: var(--green);
+  padding: 2px 8px;
+  border-radius: 999px;
+  vertical-align: middle;
+  margin-left: 4px;
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
