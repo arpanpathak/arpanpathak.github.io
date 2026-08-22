@@ -68,6 +68,17 @@ const moreProjects = [
     new: true,
   },
   {
+    name: 'cuda-oxide-demo',
+    url: 'https://github.com/arpanpathak/cuda-oxide-demo',
+    desc: 'Idiomatic CUDA kernels in Rust via CUDA-Oxide: SAXPY, dot product, tiled matmul, and a Laplace/Jacobi PDE solver benchmarked on Jetson Orin.',
+    lang: 'Rust',
+    stars: 0,
+    forks: 0,
+    icon: '🦀',
+    new: true,
+    home: 'https://arpanpathak.github.io/gpu-parallel-book/',
+  },
+  {
     name: 'cuda-oxide',
     url: 'https://github.com/arpanpathak/cuda-oxide',
     desc: 'Experimental Rust-to-CUDA compiler: write SIMT GPU kernels in safe(ish) idiomatic Rust, compiled straight to PTX.',
