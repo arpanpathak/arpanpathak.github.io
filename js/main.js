@@ -68,6 +68,16 @@ const moreProjects = [
     new: true,
   },
   {
+    name: 'grungeGPT',
+    url: 'https://github.com/arpanpathak/grungeGPT',
+    desc: 'Educational from-scratch GPT in Rust: byte-level BPE tokenizer, causal transformer, AdamW trainer, sampling, GGUF export for local Ollama on Jetson.',
+    lang: 'Rust',
+    stars: 0,
+    forks: 0,
+    icon: '🎸',
+    new: true,
+  },
+  {
     name: 'cuda-oxide-demo',
     url: 'https://github.com/arpanpathak/cuda-oxide-demo',
     desc: 'Idiomatic CUDA kernels in Rust via CUDA-Oxide: SAXPY, dot product, tiled matmul, and a Laplace/Jacobi PDE solver benchmarked on Jetson Orin.',
