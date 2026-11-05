@@ -24,6 +24,7 @@
         <a href="#about">about</a>
         <a href="#civicsense">civicsense</a>
         <a href="#openbatrangs">openbatrangs</a>
+        <a href="#staleynet">staleynet</a>
         <a href="#books">books</a>
         <a href="#experience">experience</a>
         <a href="#projects">projects</a>
@@ -156,10 +157,43 @@
     </div>
   </section>
 
+  <!-- ===== StaleyNET ===== -->
+  <section class="section section-alt" id="staleynet">
+    <div class="container">
+      <h2 class="section-title"><span class="section-num">04.</span> <span class="title-text">Research: StaleyNET</span></h2>
+      <div class="spotlight spotlight-staleynet reveal">
+        <div class="spotlight-flag">🎸 RESEARCH · MUSIC GENERATION · PURE RUST · TRAINED ON JETSON</div>
+        <div class="spotlight-body">
+          <div class="spotlight-main">
+            <img class="sn-emblem" src="assets/staleynet-emblem.svg" alt="StaleyNET emblem: a rusted chain link around a staircase of audio tokens, with a small gear turning the Rust logo" width="120" />
+            <h3>Text-prompted music generation with singing, built from first principles in Rust.</h3>
+            <p>StaleyNET turns a short description such as <em>"grunge rock, raw male voice"</em>, optionally with lyrics, into a waveform. <strong>Every stage is written from scratch in Rust</strong>: the spectrogram, a residual k-means audio tokenizer, a Transformer with <strong>hand-derived gradients</strong>, the decoder and a neural vocoder. <strong>No pretrained component is used.</strong></p>
+            <p>The GPU kernels are compiled from Rust to PTX with NVIDIA's <strong>cuda-oxide</strong>, and every model is trained from scratch on two embedded computers: a <strong>Jetson Orin NX (16 GB)</strong> and a <strong>Jetson AGX Thor (128 GB)</strong>. Because every stage is our own, each is measured on its own, including an honest study of overfitting and how often each song is seen.</p>
+            <div class="sn-badges">
+              <span>🦀 Rust</span><span>⚡ cuda-oxide</span><span>🎵 Audio tokens</span><span>🎤 Lyrics</span><span>🧪 From scratch</span>
+            </div>
+            <div class="spotlight-links">
+              <a class="btn btn-primary" href="https://github.com/arpanpathak/staleynet" target="_blank" rel="noopener">⭐ GitHub ↗</a>
+              <a class="btn btn-ghost" href="https://github.com/arpanpathak/staleynet/blob/main/docs/assets/paper-preprint.pdf" target="_blank" rel="noopener">📄 Paper ↗</a>
+              <a class="btn btn-ghost" href="https://arpanpathak.github.io/staleynet/" target="_blank" rel="noopener">📖 Book ↗</a>
+              <a class="btn btn-ghost" href="https://huggingface.co/arpanpathak/staleynet-checkpoints" target="_blank" rel="noopener">🤗 Checkpoints ↗</a>
+              <a class="btn btn-ghost" href="https://huggingface.co/datasets/arpanpathak/staleynet-data" target="_blank" rel="noopener">🗂️ Dataset ↗</a>
+            </div>
+          </div>
+          <div class="spotlight-side spotlight-cover">
+            <h4>▶ Music from a sentence</h4>
+            <img src="assets/staleynet-cover.svg" alt="StaleyNET cover: a chain link around a staircase of audio tokens, with the words Music from a sentence" />
+            <p>The audio-token staircase: each step of the spectrogram becomes a few integer codes, delayed one codebook at a time, that the Transformer learns to predict from the caption and the lyrics.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ===== Books ===== -->
   <section class="section" id="books">
     <div class="container">
-      <h2 class="section-title"><span class="section-num">04.</span> <span class="title-text">Books I've Written</span></h2>
+      <h2 class="section-title"><span class="section-num">05.</span> <span class="title-text">Books I've Written</span></h2>
       <div class="projects-grid" id="booksGrid"><!-- injected by JS --></div>
     </div>
   </section>
@@ -167,7 +201,7 @@
   <!-- ===== Experience ===== -->
   <section class="section section-alt" id="experience">
     <div class="container">
-      <h2 class="section-title"><span class="section-num">05.</span> <span class="title-text">Experience</span></h2>
+      <h2 class="section-title"><span class="section-num">06.</span> <span class="title-text">Experience</span></h2>
       <div class="timeline">
 
         <div class="timeline-item">
@@ -255,7 +289,7 @@
   <!-- ===== Projects ===== -->
   <section class="section" id="projects">
     <div class="container">
-      <h2 class="section-title"><span class="section-num">06.</span> <span class="title-text">Featured Projects</span></h2>
+      <h2 class="section-title"><span class="section-num">07.</span> <span class="title-text">Featured Projects</span></h2>
 
       <!-- More projects -->
       <h3 class="sub-title">🧪 More Personal Projects</h3>
@@ -270,7 +304,7 @@
   <!-- ===== Skills ===== -->
   <section class="section section-alt" id="skills">
     <div class="container">
-      <h2 class="section-title"><span class="section-num">07.</span> <span class="title-text">Skills &amp; Toolbox</span></h2>
+      <h2 class="section-title"><span class="section-num">08.</span> <span class="title-text">Skills &amp; Toolbox</span></h2>
       <div class="skills-grid">
         <div class="skill-group">
           <h4>Languages</h4>
@@ -311,7 +345,7 @@
   <!-- ===== Education ===== -->
   <section class="section" id="education">
     <div class="container">
-      <h2 class="section-title"><span class="section-num">08.</span> <span class="title-text">Education</span></h2>
+      <h2 class="section-title"><span class="section-num">09.</span> <span class="title-text">Education</span></h2>
       <div class="edu-card">
         <div class="edu-icon">🎓</div>
         <div>
@@ -326,7 +360,7 @@
   <!-- ===== Contact ===== -->
   <section class="section section-contact" id="contact">
     <div class="container">
-      <h2 class="section-title"><span class="section-num">09.</span> <span class="title-text">Let's Build Something</span></h2>
+      <h2 class="section-title"><span class="section-num">10.</span> <span class="title-text">Let's Build Something</span></h2>
       <p class="contact-lead">Currently engineering systems that make AI fast, safe, and affordable — building openBatarangs for local-first agentic coding — and writing books about how it all works.</p>
       <div class="contact-actions">
         <a class="btn btn-primary" href="mailto:arpan.pathak47@gmail.com">✉️ arpan.pathak47@gmail.com</a>

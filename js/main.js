@@ -58,6 +58,17 @@ const books = [
 /* 🧪 More personal projects */
 const moreProjects = [
   {
+    name: 'staleynet',
+    url: 'https://github.com/arpanpathak/staleynet',
+    desc: 'Text-prompted music generation with singing, from scratch in Rust: audio tokenizer, Transformer with hand-derived gradients, vocoder, and cuda-oxide GPU kernels, trained on Jetson Orin and Thor.',
+    lang: 'Rust',
+    stars: 0,
+    forks: 0,
+    icon: '🎵',
+    new: true,
+    home: 'https://arpanpathak.github.io/staleynet/',
+  },
+  {
     name: 'openbatrangs',
     url: 'https://github.com/arpanpathak/openbatrangs',
     desc: 'Agentic coding CLI for local models via Ollama. Auto-discovers the best model on Jetson/edge hardware and iterates with tools.',
