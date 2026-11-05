@@ -821,6 +821,55 @@ a:hover {
   color: var(--text-dim);
 }
 
+.spotlight-staleynet {
+  border-color: rgba(214, 120, 70, 0.4);
+}
+
+.spotlight-staleynet::before {
+  background: linear-gradient(90deg, #8b3a1a, var(--accent), #e8c39e);
+}
+
+.sn-emblem {
+  width: 120px;
+  height: auto;
+  margin-bottom: 18px;
+}
+
+.sn-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0 4px;
+}
+
+.sn-badges span {
+  font-family: var(--mono);
+  font-size: 0.76rem;
+  color: var(--accent);
+  background: rgba(255, 122, 69, 0.08);
+  border: 1px solid rgba(255, 122, 69, 0.28);
+  padding: 5px 12px;
+  border-radius: 999px;
+}
+
+.spotlight-cover h4 {
+  color: var(--accent);
+}
+
+.spotlight-cover img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  margin-bottom: 10px;
+}
+
+.spotlight-cover p {
+  font-size: 0.82rem;
+  color: var(--text-dim);
+}
+
 .project-new {
   display: inline-block;
   font-family: var(--mono);
